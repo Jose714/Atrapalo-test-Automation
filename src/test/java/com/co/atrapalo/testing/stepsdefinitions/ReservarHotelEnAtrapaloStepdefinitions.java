@@ -3,6 +3,7 @@ package com.co.atrapalo.testing.stepsdefinitions;
 import org.openqa.selenium.WebDriver;
 
 import com.co.atrapalo.testing.tasks.Entra;
+import com.co.atrapalo.testing.tasks.Reservar;
 import com.co.atrapalo.testing.ui.PaginaInicioAtrapalo;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -33,7 +34,7 @@ public class ReservarHotelEnAtrapaloStepdefinitions {
 
 	@When("^El busca y reserva el hotel$")
 	public void elBuscaYReservaElHotel() {
-	    // Write code here that turns the phrase above into concrete actions
+	    jose.attemptsTo(Reservar.elHotel());
 	    
 	}
 
